@@ -1,2 +1,1 @@
-# privacy
-Privacy policy for the Lifosys Android app
+Privacy policy for the Lifosys Android app — see index.md
