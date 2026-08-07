@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lifosys — Privacy Policy</title>
+<meta name="description" content="How Lifosys handles your information. No servers, no accounts, no analytics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0B0B0D;
@@ -16,6 +17,8 @@
   --muted:#8A8A90;
   --dim:#5A5A60;
   --accent:#A3E635;
+  --violet:#7B5CFF;
+  --ember:#F97316;
 }
 *{box-sizing:border-box}
 html{-webkit-font-smoothing:antialiased}
@@ -29,19 +32,50 @@ body{
 }
 .wrap{max-width:680px;margin:0 auto;padding:0 28px 100px}
 
+/* ── Brand mark ── */
+.mark{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:22px;
+  user-select:none;
+}
+.mark-word{
+  display:inline-flex;
+  align-items:center;
+  font-size:23px;
+  font-weight:800;
+  letter-spacing:-.02em;
+  color:#FFF;
+  line-height:1;
+}
+.mark-word svg{display:block;margin:0 1px}
+.mark-rule{
+  width:1px;
+  height:17px;
+  background:var(--border);
+}
+.mark-sigma{
+  font-size:17px;
+  font-weight:600;
+  color:#FFF;
+  line-height:1;
+  letter-spacing:.01em;
+}
+.mark-dot{
+  width:5px;height:5px;
+  border-radius:50%;
+  background:var(--ember);
+  margin-left:1px;
+  align-self:flex-end;
+  margin-bottom:2px;
+}
+
 /* ── Header ── */
 header{
   padding:80px 0 44px;
   border-bottom:1px solid var(--border);
   margin-bottom:56px;
-}
-.brand{
-  font-size:12px;
-  font-weight:600;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:20px;
 }
 h1{
   font-size:38px;
@@ -149,6 +183,17 @@ a:hover{border-bottom-color:var(--accent)}
   margin-top:4px;
 }
 
+.note{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:16px 18px;
+  margin:20px 0 0;
+  font-size:14px;
+  color:var(--muted);
+}
+.note strong{color:var(--text)}
+
 footer{
   margin-top:80px;
   padding-top:36px;
@@ -157,10 +202,12 @@ footer{
 }
 .tag{font-size:14px;color:var(--muted);margin:0 0 8px}
 .copy{font-size:12px;color:var(--dim);margin:0}
+footer a{font-size:13px}
 
 @media(max-width:600px){
   header{padding:52px 0 32px;margin-bottom:40px}
   h1{font-size:29px}
+  .mark-word{font-size:20px}
   section{margin-bottom:44px}
   .lead{margin-bottom:44px;padding:18px 20px}
   .wrap{padding:0 20px 70px}
@@ -173,14 +220,19 @@ footer{
 <div class="wrap">
 
 <header>
-  <div class="brand">Lifosys</div>
+  <div class="mark">
+    <span class="mark-word">Lif<svg width="30" height="22" viewBox="0 0 30 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7.1" stroke="#A3E635" stroke-width="2"/><circle cx="19" cy="11" r="7.1" stroke="#7B5CFF" stroke-width="2"/></svg>sys</span>
+    <span class="mark-rule"></span>
+    <span class="mark-sigma">&Sigma;</span>
+    <span class="mark-dot"></span>
+  </div>
   <h1>Privacy Policy</h1>
-  <p class="date">Last updated 23 July 2026</p>
+  <p class="date">Last updated 7 August 2026</p>
 </header>
 
-<p class="intro">Lifosys (“the app”) is operated by Sudhir Ranjan (“we”, “us”). This policy explains how the app handles your information.</p>
+<p class="intro">Lifosys (“the app”) is operated by Sudhir Ranjan (“we”, “us”). This policy explains how the app handles your information. It applies to Lifosys on every platform we publish it for.</p>
 
-<div class="lead"><strong>Lifosys does not have servers, and we never receive your data.</strong> Everything you record stays on your device unless you deliberately choose to back it up or export it.</div>
+<div class="lead"><strong>Lifosys does not have servers, and we never receive the things you write.</strong> Everything you record stays on your device unless you deliberately choose to back it up or export it.</div>
 
 <section>
 <h2>01 — What stays on your device</h2>
@@ -192,15 +244,17 @@ footer{
 <li><strong>Financial records</strong> you enter yourself — transactions, amounts, categories, budgets</li>
 <li><strong>Health and wellbeing entries</strong> — weight, sleep, steps, energy, mood, and meals you log</li>
 <li><strong>Location</strong>, only when you choose to attach a place to a journal entry</li>
+<li><strong>Your name, profile photo, and profile wall</strong>, and any quote you write on it</li>
 <li><strong>App settings and preferences</strong></li>
 </ul>
 <p>This information is stored in the app’s private storage area, which other apps on your device cannot read. It is protected by your device’s own security, including any screen lock or biometric lock you have enabled. Lifosys also offers an optional in-app lock using your device’s biometric authentication.</p>
-<p><strong>We do not receive any of this information.</strong> There is no Lifosys server, no account system, no cloud database, and no automatic upload.</p>
+<p><strong>We do not receive any of this information.</strong> There is no Lifosys server, no account system, no cloud database, and no automatic upload of anything you write.</p>
+<p>Lifosys does not ask for your date of birth, gender, address, phone number, or any other demographic detail. We do not collect data we have no use for.</p>
 </section>
 
 <section>
-<h2>02 — What leaves your device</h2>
-<p>There are only four circumstances in which data leaves your device, and three of them require you to act.</p>
+<h2>02 — What leaves your device, at your request</h2>
+<p>These things happen only when you choose them.</p>
 
 <h3>Backup to your own Google Drive</h3>
 <p>If you choose to sign in with Google and use the backup feature, the app creates a backup file containing your data and uploads it to <strong>your own Google Drive account</strong>. The app requests only the <code>drive.file</code> permission, which limits its access to files it creates itself — it cannot see or touch any of your other Drive files. We have no access to your Drive or to the backup. You can delete it at any time.</p>
@@ -209,17 +263,28 @@ footer{
 <p>You can export your data to a file and save it wherever you choose. The file goes only to the destination you select.</p>
 
 <h3>Google Sign-In</h3>
-<p>If you sign in with Google, the app reads your display name, email address, and profile photo, and stores them on your device so the app can greet you and show your picture. This information is not transmitted anywhere by us. Your profile photo is loaded from Google’s servers to display it. You are not required to sign in to use the app.</p>
+<p>If you sign in with Google, the app reads your display name, email address, and profile photo, and stores them on your device so the app can greet you and show your picture. This information is not transmitted anywhere by us. Your profile photo is loaded from Google’s servers in order to display it. You are not required to sign in to use the app.</p>
 
 <h3>Location lookup</h3>
 <p>When you attach a place to a journal entry, the app asks your device for its location and may use Google’s services to convert that into a place name. The resulting location is saved with your journal entry on your device.</p>
+
+<h3>Purchases</h3>
+<p>Lifosys may offer optional paid features. Any purchase is processed entirely by the app store you installed from — Google Play or the Apple App Store. <strong>Your payment details never pass through Lifosys and we never see them.</strong> The app receives only a confirmation of whether a purchase is active, which it stores on your device.</p>
 </section>
 
 <section>
-<h2>03 — Notifications</h2>
+<h2>03 — What leaves your device automatically</h2>
+<p>Two things are sent without you asking. Neither of them contains anything you have written.</p>
+
+<h3>Crash reports</h3>
+<p>Lifosys uses <strong>Firebase Crashlytics</strong>. If the app fails unexpectedly, a report is sent so the fault can be found and fixed. A report contains the technical details of the failure — where in the code it happened, your device model, your Android version, the app version, and an identifier for this installation of the app. We also attach four technical labels: the app’s internal database version, your device’s time zone, whether Android has granted the app permission to fire alarms at exact times, and whether the build is a development or a released one.</p>
+<p><strong>A crash report contains nothing you wrote.</strong> No journal text, no habits, no tasks, no financial records, no health entries, no photos, no name, and no email address. It records that the app broke and what the app was doing at the time — not what you were doing.</p>
+<p>Crash reporting is always active. It is the only way we can find out that the app is failing on a device we do not own.</p>
+
+<h3>Notification registration</h3>
 <p>Lifosys uses Firebase Cloud Messaging so we can send occasional announcements about new features and app updates. This registers an anonymous device identifier with Google’s notification service.</p>
 <p>This channel is <strong>one-way</strong>. It allows us to send a message to your device. It does not allow us to read anything from your device, and none of your data is transmitted through it. You can turn off notifications at any time in your device settings.</p>
-<p>The app also uses local reminders for tasks and habits. These are generated on your device and involve no network connection.</p>
+<p>Reminders for tasks and habits are different: they are generated on your device and involve no network connection at all.</p>
 </section>
 
 <section>
@@ -227,49 +292,66 @@ footer{
 <ul>
 <li>We do <strong>not</strong> collect analytics or usage statistics</li>
 <li>We do <strong>not</strong> use tracking, advertising, or profiling technologies</li>
-<li>We do <strong>not</strong> show ads</li>
+<li>We do <strong>not</strong> show ads, and we do not allow anyone else to advertise inside the app</li>
 <li>We do <strong>not</strong> sell, rent, or share your information with anyone</li>
 <li>We do <strong>not</strong> operate servers that store your data</li>
 <li>We do <strong>not</strong> require an account to use the app</li>
+<li>We do <strong>not</strong> use your content to train machine-learning models</li>
 </ul>
+<div class="note"><strong>Crash reports are not analytics.</strong> Analytics record what you do in an app — which screens you open, which buttons you press, how long you stay. Lifosys collects none of that. A crash report is sent only when the app fails, and describes the failure rather than your behaviour.</div>
 </section>
 
 <section>
 <h2>05 — Third-party services</h2>
-<p>The app uses services provided by Google, and only when the relevant feature is used:</p>
+<p>The app uses services provided by Google, and, on Apple devices, by Apple. Most are used only when the relevant feature is used.</p>
 <table>
 <tr><th>Service</th><th>When</th><th>What it handles</th></tr>
 <tr><td>Google Sign-In</td><td>Only if you sign in</td><td>Name, email, profile photo</td></tr>
 <tr><td>Google Drive</td><td>Only if you back up</td><td>Your backup, in your own Drive</td></tr>
 <tr><td>Play Services</td><td>Only if you attach a place</td><td>Your location, at that moment</td></tr>
 <tr><td>Cloud Messaging</td><td>App announcements</td><td>An anonymous device identifier</td></tr>
+<tr><td>Crashlytics</td><td>Only if the app fails</td><td>Technical crash details</td></tr>
+<tr><td>App store billing</td><td>Only if you buy something</td><td>The purchase; we never see your payment details</td></tr>
 </table>
-<p style="margin-top:20px">These interactions are governed by <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
+<p style="margin-top:20px">These interactions are governed by <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and, where relevant, <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
 </section>
 
 <section>
 <h2>06 — Retention and deletion</h2>
-<p>Your data remains on your device for as long as you keep the app installed. You can delete individual entries at any time from within the app.</p>
-<p><strong>Uninstalling Lifosys deletes all of its data from your device.</strong> Because we never receive your data, there is nothing for us to delete on our side and no deletion request to make.</p>
-<p>If you have created backups in your Google Drive, those remain until you delete them yourself.</p>
+<p>Your data remains on your device for as long as you keep the app installed. You are always in control of it, and there are four ways to remove it.</p>
+
+<h3>Delete individual items</h3>
+<p>Any entry, habit, task, transaction, or attachment can be deleted from within the app at the moment you no longer want it.</p>
+
+<h3>Sign out</h3>
+<p>Signing out, from the Profile screen, removes your name, email address, and profile photo from the device and <strong>revokes the app’s access to your Google Drive</strong>. Everything you have written stays on your phone, untouched.</p>
+
+<h3>Delete everything</h3>
+<p>The Profile screen offers <strong>Delete Everything</strong>. It asks you to type the word DELETE, and then erases every habit, journal entry, task, transaction, photo, attachment, and setting from the device, revokes Google access, and returns the app to the state it was in when you first installed it. This cannot be undone.</p>
+<p>Backups you have already made in your own Google Drive are deliberately <strong>not</strong> touched, so that a mistaken tap is recoverable. You can delete those yourself from Drive at any time.</p>
+
+<h3>Uninstall</h3>
+<p>Uninstalling Lifosys removes all of its data from your device.</p>
+
+<div class="note">Because we never receive the things you write, <strong>there is no copy of your data on our side to delete</strong>. Deletion happens entirely on your device and takes effect immediately. Full details, including how to contact us about deletion after uninstalling, are on the <a href="https://lifosys-app.github.io/privacy/delete.html">data deletion page</a>.</div>
 </section>
 
 <section>
 <h2>07 — Security</h2>
-<p>Your data is stored in the app’s private storage area, isolated from other apps by Android. You can enable an in-app biometric lock for additional protection.</p>
-<p>Data transmitted during backup or restore is encrypted in transit using TLS.</p>
-<p>For transparency: data stored on your device and within backup files is <strong>not separately encrypted</strong> by the app beyond the protections Android and your device lock provide. We recommend keeping a screen lock enabled on your device.</p>
+<p>Your data is stored in the app’s private storage area, isolated from other apps by the operating system. You can enable an in-app biometric lock for additional protection.</p>
+<p>Data transmitted during backup, restore, or crash reporting is encrypted in transit using TLS.</p>
+<p>For transparency: data stored on your device and within backup files is <strong>not separately encrypted</strong> by the app beyond the protections your operating system and device lock provide. We recommend keeping a screen lock enabled on your device.</p>
 </section>
 
 <section>
 <h2>08 — Children</h2>
-<p>Lifosys is intended for adults and is not directed at children. We do not knowingly collect information from children — and in fact, we do not collect information from anyone, as explained above.</p>
+<p>Lifosys is intended for adults and is not directed at children. We do not knowingly collect information from children — and in fact, we do not collect the contents of anyone’s entries, as explained above.</p>
 </section>
 
 <section>
 <h2>09 — Your rights</h2>
-<p>Because your data never leaves your device except at your own direction, you have complete control over it at all times. You can view, edit, export, or delete anything in the app whenever you wish.</p>
-<p>Under data protection laws including India’s Digital Personal Data Protection Act, the EU General Data Protection Regulation, and the California Consumer Privacy Act, you have rights to access, correct, and delete your personal data. In the case of Lifosys, you exercise these rights directly through the app, since we hold no copy of your information.</p>
+<p>Because the things you write never leave your device except at your own direction, you have complete control over them at all times. You can view, edit, export, or delete anything in the app whenever you wish.</p>
+<p>Under data protection laws including India’s Digital Personal Data Protection Act, the EU General Data Protection Regulation, and the California Consumer Privacy Act, you have rights to access, correct, and delete your personal data. In the case of Lifosys, you exercise these rights directly through the app, since we hold no copy of your information. If you would like written confirmation of that, write to us at the address below.</p>
 </section>
 
 <section>
@@ -285,7 +367,7 @@ footer{
 
 <footer>
   <p class="tag">An operating system for your life, running entirely on your device.</p>
-  <p class="copy">© 2026 Lifosys · Sudhir Ranjan</p>
+  <p class="copy">© 2026 Lifosys · Sudhir Ranjan · <a href="https://lifosys-app.github.io/privacy/delete.html">Data deletion</a></p>
 </footer>
 
 </div>
