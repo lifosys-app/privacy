@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lifosys — Delete Your Data</title>
+<meta name="description" content="How to delete your Lifosys data. Everything is stored on your device, and you can erase all of it from inside the app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0B0D;
+  --surface:#141416;
+  --border:#232326;
+  --text:#E8E8E8;
+  --muted:#8A8A90;
+  --dim:#5A5A60;
+  --accent:#A3E635;
+  --violet:#7B5CFF;
+  --ember:#F97316;
+  --warn:#F09292;
+}
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:15px;
+  line-height:1.7;
+}
+.wrap{max-width:680px;margin:0 auto;padding:0 28px 100px}
+
+/* ── Brand mark ── */
+.mark{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:22px;
+  user-select:none;
+}
+.mark-word{
+  display:inline-flex;
+  align-items:center;
+  font-size:23px;
+  font-weight:800;
+  letter-spacing:-.02em;
+  color:#FFF;
+  line-height:1;
+}
+.mark-word svg{display:block;margin:0 1px}
+.mark-rule{width:1px;height:17px;background:var(--border)}
+.mark-sigma{font-size:17px;font-weight:600;color:#FFF;line-height:1}
+.mark-dot{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--ember);margin-left:1px;
+  align-self:flex-end;margin-bottom:2px;
+}
+
+header{
+  padding:80px 0 44px;
+  border-bottom:1px solid var(--border);
+  margin-bottom:56px;
+}
+h1{
+  font-size:38px;
+  font-weight:700;
+  letter-spacing:-.03em;
+  line-height:1.1;
+  margin:0 0 16px;
+}
+.date{font-size:13px;color:var(--dim);margin:0}
+
+.intro{color:var(--muted);margin:0 0 28px}
+.lead{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:2px solid var(--accent);
+  border-radius:10px;
+  padding:22px 24px;
+  margin:0 0 64px;
+  font-size:15px;
+}
+.lead strong{color:var(--text);font-weight:600}
+
+section{margin-bottom:56px}
+h2{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--dim);
+  margin:0 0 20px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--border);
+}
+h3{font-size:15px;font-weight:600;color:var(--text);margin:32px 0 8px}
+h3:first-of-type{margin-top:20px}
+p{margin:0 0 16px;color:var(--muted)}
+p:last-child{margin-bottom:0}
+strong{color:var(--text);font-weight:600}
+
+ul{margin:0 0 16px;padding:0;list-style:none}
+li{position:relative;padding-left:20px;margin-bottom:9px;color:var(--muted)}
+li::before{
+  content:'';position:absolute;left:2px;top:11px;
+  width:4px;height:4px;border-radius:50%;background:var(--dim);
+}
+
+/* ── Numbered steps ── */
+ol.steps{margin:20px 0 0;padding:0;list-style:none;counter-reset:step}
+ol.steps li{
+  counter-increment:step;
+  position:relative;
+  padding-left:44px;
+  margin-bottom:22px;
+  color:var(--muted);
+}
+ol.steps li::before{
+  content:counter(step);
+  position:absolute;
+  left:0;top:1px;
+  width:26px;height:26px;
+  border-radius:8px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  color:var(--accent);
+  font-size:12px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1;
+}
+ol.steps li strong{display:block;color:var(--text);margin-bottom:2px}
+
+table{width:100%;border-collapse:collapse;margin:20px 0 0;font-size:13.5px}
+th{
+  text-align:left;font-size:10px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--dim);
+  padding:0 14px 10px 0;border-bottom:1px solid var(--border);
+}
+td{
+  padding:13px 14px 13px 0;
+  border-bottom:1px solid var(--border);
+  color:var(--muted);vertical-align:top;
+}
+td:first-child{color:var(--text);font-weight:500}
+tr:last-child td{border-bottom:none}
+
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(163,230,53,.3)}
+a:hover{border-bottom-color:var(--accent)}
+
+.email{
+  display:inline-block;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:12px 18px;
+  font-size:14.5px;
+  color:var(--text);
+  font-weight:500;
+  margin-top:4px;
+}
+.email a{color:var(--text);border-bottom:none}
+
+.note{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:16px 18px;
+  margin:20px 0 0;
+  font-size:14px;
+  color:var(--muted);
+}
+.note strong{color:var(--text)}
+.note.warn{border-left:2px solid var(--warn)}
+
+footer{
+  margin-top:80px;padding-top:36px;
+  border-top:1px solid var(--border);text-align:center;
+}
+.tag{font-size:14px;color:var(--muted);margin:0 0 8px}
+.copy{font-size:12px;color:var(--dim);margin:0}
+footer a{font-size:13px}
+
+@media(max-width:600px){
+  header{padding:52px 0 32px;margin-bottom:40px}
+  h1{font-size:29px}
+  .mark-word{font-size:20px}
+  section{margin-bottom:44px}
+  .lead{margin-bottom:44px;padding:18px 20px}
+  .wrap{padding:0 20px 70px}
+  table{font-size:12.5px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">
+    <span class="mark-word">Lif<svg width="30" height="22" viewBox="0 0 30 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7.1" stroke="#A3E635" stroke-width="2"/><circle cx="19" cy="11" r="7.1" stroke="#7B5CFF" stroke-width="2"/></svg>sys</span>
+    <span class="mark-rule"></span>
+    <span class="mark-sigma">&Sigma;</span>
+    <span class="mark-dot"></span>
+  </div>
+  <h1>Delete Your Data</h1>
+  <p class="date">Last updated 7 August 2026</p>
+</header>
+
+<p class="intro">This page explains how to delete your Lifosys account association and all of your data, what is removed, what is kept, and how long it takes.</p>
+
+<div class="lead"><strong>Lifosys has no servers and no user database, so we hold no copy of your data to delete.</strong> Everything you write lives on your own device, and you can erase all of it from inside the app in under a minute.</div>
+
+<section>
+<h2>01 — Delete everything from inside the app</h2>
+<p>This is the complete deletion path. It removes all your data and disconnects your Google account.</p>
+<ol class="steps">
+<li><strong>Open Lifosys</strong> and tap the menu button in the top-left corner.</li>
+<li><strong>Tap your profile photo</strong> at the top of the sidebar to open your Profile.</li>
+<li><strong>Scroll to the bottom</strong> and tap <strong>Delete Everything</strong>.</li>
+<li><strong>Type DELETE</strong> when asked, then confirm.</li>
+</ol>
+<div class="note">The app erases everything, disconnects your Google account, restarts, and returns to the state it was in when you first installed it. <strong>This takes a few seconds and cannot be undone.</strong></div>
+</section>
+
+<section>
+<h2>02 — What is deleted</h2>
+<p>Every one of these is removed from your device immediately:</p>
+<table>
+<tr><th>Data</th><th>What happens</th></tr>
+<tr><td>Tasks, projects, areas</td><td>Permanently erased</td></tr>
+<tr><td>Habits and history</td><td>Permanently erased</td></tr>
+<tr><td>Journal entries</td><td>Permanently erased</td></tr>
+<tr><td>Photos, video, audio, documents</td><td>Files permanently erased</td></tr>
+<tr><td>Financial records</td><td>Permanently erased</td></tr>
+<tr><td>Health and wellbeing entries</td><td>Permanently erased</td></tr>
+<tr><td>Name, email, profile photo</td><td>Removed from the device</td></tr>
+<tr><td>Profile wall and quote</td><td>Permanently erased</td></tr>
+<tr><td>Settings and preferences</td><td>Reset to defaults</td></tr>
+<tr><td>Google Drive access</td><td>Revoked — the app can no longer reach your Drive</td></tr>
+</table>
+</section>
+
+<section>
+<h2>03 — What is kept, and why</h2>
+
+<h3>Backups in your own Google Drive</h3>
+<p>If you have made backups, they stay in <strong>your</strong> Google Drive. They are your files, in your account, and we cannot see or reach them. We deliberately do not delete them, so that an accidental tap on Delete Everything does not cost you your history.</p>
+<p>To remove them: open Google Drive, search for files beginning with <code>lifosys</code>, and delete them. Or visit <a href="https://myaccount.google.com/permissions">your Google account permissions</a> and remove Lifosys entirely.</p>
+
+<h3>Crash reports</h3>
+<p>If the app has ever failed on your device, a technical crash report may have been sent to Firebase Crashlytics. These reports are retained for up to <strong>90 days</strong> and then deleted automatically by Google.</p>
+<p>A crash report contains only the technical details of the failure — where in the code it happened, your device model, operating system version, app version, and an identifier for that installation. <strong>It contains nothing you wrote:</strong> no journal text, no habits, no tasks, no financial records, no health entries, no photos, no name, and no email address.</p>
+
+<h3>Purchase records</h3>
+<p>If you have bought anything, the record of that transaction is held by Google Play or the Apple App Store under their own policies. Lifosys never sees or stores your payment details.</p>
+</section>
+
+<section>
+<h2>04 — If you have already uninstalled the app</h2>
+<p>Uninstalling Lifosys removes all of its data from your device. There is nothing left for us to delete, because there was never a copy anywhere else.</p>
+<p>Two things may remain, and both are entirely in your own hands:</p>
+<ul>
+<li><strong>Backups in your Google Drive</strong> — delete them from Drive, as described above</li>
+<li><strong>The app’s access to your Google account</strong> — remove it at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+</ul>
+</section>
+
+<section>
+<h2>05 — Request deletion or written confirmation</h2>
+<p>If you would like us to confirm in writing that we hold no data about you, or you have any question about deletion, write to us:</p>
+<div class="email"><a href="mailto:lifosys.labs@gmail.com?subject=Data%20deletion%20request%20-%20Lifosys">lifosys.labs@gmail.com</a></div>
+<p style="margin-top:20px">We reply to deletion requests within <strong>7 days</strong>. In almost every case the reply will confirm that there was nothing to delete, because Lifosys holds no copy of your information — but you are entitled to ask, and to have that in writing.</p>
+</section>
+
+<section>
+<h2>06 — Why this page is short</h2>
+<p>Most apps need a long deletion process because your data is sitting on their servers, spread across databases and backups, and removing it takes time and coordination.</p>
+<p>Lifosys was built the other way round. There are no servers, no accounts, and no database of users. Your life is on your phone, which means deleting it is a decision you make and execute yourself, in seconds, without asking anyone’s permission.</p>
+<div class="note"><strong>Private by architecture, not just by policy.</strong> A promise can be revised. This cannot: Lifosys has nowhere to send your data, so it doesn’t.</div>
+</section>
+
+<footer>
+  <p class="tag">An operating system for your life, running entirely on your device.</p>
+  <p class="copy">© 2026 Lifosys · Sudhir Ranjan · <a href="https://lifosys-app.github.io/privacy/">Privacy policy</a></p>
+</footer>
+
+</div>
+</body>
+</html>
