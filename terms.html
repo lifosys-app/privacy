@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lifosys — Terms of Service</title>
+<meta name="description" content="Terms of service for Lifosys, including subscriptions, lifetime access, and refunds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0B0D;
+  --surface:#141416;
+  --border:#232326;
+  --text:#E8E8E8;
+  --muted:#8A8A90;
+  --dim:#5A5A60;
+  --accent:#A3E635;
+  --violet:#7B5CFF;
+  --ember:#F97316;
+}
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:15px;
+  line-height:1.7;
+}
+.wrap{max-width:680px;margin:0 auto;padding:0 28px 100px}
+
+/* ── Brand mark ── */
+.mark{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:22px;
+  user-select:none;
+}
+.mark-word{
+  display:inline-flex;
+  align-items:center;
+  font-size:23px;
+  font-weight:800;
+  letter-spacing:-.02em;
+  color:#FFF;
+  line-height:1;
+}
+.mark-word svg{display:block;margin:0 1px}
+.mark-rule{
+  width:1px;
+  height:17px;
+  background:var(--border);
+}
+.mark-sigma{
+  font-size:17px;
+  font-weight:600;
+  color:#FFF;
+  line-height:1;
+  letter-spacing:.01em;
+}
+.mark-dot{
+  width:5px;height:5px;
+  border-radius:50%;
+  background:var(--ember);
+  margin-left:1px;
+  align-self:flex-end;
+  margin-bottom:2px;
+}
+
+/* ── Header ── */
+header{
+  padding:80px 0 44px;
+  border-bottom:1px solid var(--border);
+  margin-bottom:56px;
+}
+h1{
+  font-size:38px;
+  font-weight:700;
+  letter-spacing:-.03em;
+  line-height:1.1;
+  margin:0 0 16px;
+}
+.date{font-size:13px;color:var(--dim);margin:0}
+
+/* ── Lead ── */
+.intro{color:var(--muted);margin:0 0 28px}
+.lead{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:2px solid var(--accent);
+  border-radius:10px;
+  padding:22px 24px;
+  margin:0 0 64px;
+  font-size:15px;
+}
+.lead strong{color:var(--text);font-weight:600}
+
+/* ── Sections ── */
+section{margin-bottom:56px}
+h2{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--dim);
+  margin:0 0 20px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--border);
+}
+h3{
+  font-size:15px;
+  font-weight:600;
+  color:var(--text);
+  margin:32px 0 8px;
+}
+h3:first-of-type{margin-top:20px}
+p{margin:0 0 16px;color:var(--muted)}
+p:last-child{margin-bottom:0}
+strong{color:var(--text);font-weight:600}
+
+ul{margin:0 0 16px;padding:0;list-style:none}
+li{
+  position:relative;
+  padding-left:20px;
+  margin-bottom:9px;
+  color:var(--muted);
+}
+li::before{
+  content:'';
+  position:absolute;
+  left:2px;top:11px;
+  width:4px;height:4px;
+  border-radius:50%;
+  background:var(--dim);
+}
+
+/* ── Table ── */
+table{width:100%;border-collapse:collapse;margin:20px 0 0;font-size:13.5px}
+th{
+  text-align:left;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--dim);
+  padding:0 14px 10px 0;
+  border-bottom:1px solid var(--border);
+}
+td{
+  padding:13px 14px 13px 0;
+  border-bottom:1px solid var(--border);
+  color:var(--muted);
+  vertical-align:top;
+}
+td:first-child{color:var(--text);font-weight:500;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+
+code{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:2px 6px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:12.5px;
+  color:var(--accent);
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(163,230,53,.3)}
+a:hover{border-bottom-color:var(--accent)}
+
+.email{
+  display:inline-block;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:12px 18px;
+  font-size:14.5px;
+  color:var(--text);
+  font-weight:500;
+  margin-top:4px;
+}
+
+.note{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:16px 18px;
+  margin:20px 0 0;
+  font-size:14px;
+  color:var(--muted);
+}
+.note strong{color:var(--text)}
+
+footer{
+  margin-top:80px;
+  padding-top:36px;
+  border-top:1px solid var(--border);
+  text-align:center;
+}
+.tag{font-size:14px;color:var(--muted);margin:0 0 8px}
+.copy{font-size:12px;color:var(--dim);margin:0}
+footer a{font-size:13px}
+
+@media(max-width:600px){
+  header{padding:52px 0 32px;margin-bottom:40px}
+  h1{font-size:29px}
+  .mark-word{font-size:20px}
+  section{margin-bottom:44px}
+  .lead{margin-bottom:44px;padding:18px 20px}
+  .wrap{padding:0 20px 70px}
+  table{font-size:12.5px}
+  td:first-child{white-space:normal}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">
+    <span class="mark-word">Lif<svg width="30" height="22" viewBox="0 0 30 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7.1" stroke="#A3E635" stroke-width="2"/><circle cx="19" cy="11" r="7.1" stroke="#7B5CFF" stroke-width="2"/></svg>sys</span>
+    <span class="mark-rule"></span>
+    <span class="mark-sigma">&Sigma;</span>
+    <span class="mark-dot"></span>
+  </div>
+  <h1>Terms of Service</h1>
+  <p class="date">Last updated 16 August 2026</p>
+</header>
+
+<p class="intro">These terms apply to your use of Lifosys (“the app”), operated by Sudhir Ranjan (“we”, “us”). By using the app you agree to them. If you do not agree, please do not use the app.</p>
+
+<div class="lead"><strong>Lifosys is free to use. Some features require Lifosys Pro.</strong> Every purchase is handled by the app store you installed from — we never see your payment details, and we never see what you write.</div>
+
+<section>
+<h2>01 — What Lifosys is</h2>
+<p>Lifosys is a personal life-management app for tracking tasks, projects, habits, journal entries, finances, and health. It runs on your own device.</p>
+<p>The app is a tool for recording and reviewing what you choose to record. It is not medical, psychological, financial, or legal advice, and nothing it displays should be treated as such. Decisions you take remain your own.</p>
+<p>You are responsible for what you enter and for keeping your device secure.</p>
+</section>
+
+<section>
+<h2>02 — Lifosys Pro</h2>
+<p>Certain features require a paid plan. Three are offered:</p>
+<table>
+<tr><th>Plan</th><th>Billing</th><th>Renews</th></tr>
+<tr><td>Monthly</td><td>Each month</td><td>Yes, until cancelled</td></tr>
+<tr><td>Annual</td><td>Once a year</td><td>Yes, until cancelled</td></tr>
+<tr><td>Lifetime</td><td>Once</td><td>No</td></tr>
+</table>
+<p style="margin-top:20px">Prices are shown in your local currency inside the app and on the store’s payment screen before you confirm. They include any tax required where you live. The price you see at the moment of purchase is the price you pay.</p>
+<p>All purchases are processed by Google Play or the Apple App Store. <strong>Your payment details never pass through Lifosys.</strong> The app receives only a confirmation of whether a purchase is active.</p>
+</section>
+
+<section>
+<h2>03 — Renewal and cancellation</h2>
+<p>Monthly and annual plans renew automatically at the end of each period and are charged to the store account you purchased with. Renewal continues until you cancel.</p>
+<p>You can cancel at any time in the Google Play Store under <strong>Subscriptions</strong>, or in your Apple ID settings. Cancelling stops future charges. <strong>You keep Pro until the end of the period you have already paid for.</strong></p>
+<p>We cannot cancel a subscription on your behalf — only the store can, because only the store holds the payment relationship.</p>
+</section>
+
+<section>
+<h2>04 — What Lifetime covers</h2>
+<p>Lifetime access covers <strong>every feature in Lifosys at the time you buy it</strong>, and all future improvements to those features — fixes, refinements, performance work, and support for new devices and operating system versions — for as long as the app is maintained.</p>
+<p>Substantial new modules released in the future may be sold separately. If that ever happens, you will be told clearly before anything is charged, and <strong>nothing you already have will be taken away or reduced</strong>.</p>
+<p>Lifetime is a one-time purchase. It is never re-charged and never renews.</p>
+<div class="note"><strong>Being straightforward about the limit of the word.</strong> Lifosys is built and maintained by one person. “Lifetime” means for as long as the app is maintained and distributed — not a guarantee that any software will exist forever. We would rather say that plainly than let the word imply something no developer can promise.</div>
+</section>
+
+<section>
+<h2>05 — Refunds</h2>
+<p>Purchases are handled by Google Play. Google offers self-service refunds within <strong>48 hours</strong> of purchase, directly from the Play Store, with no need to contact us.</p>
+<p>After that window, refund requests are considered individually. Write to us at the address below and tell us what happened.</p>
+<p>Subscriptions can be cancelled at any time; you keep access until the current period ends. On Apple devices, refunds are requested through Apple rather than through us.</p>
+</section>
+
+<section>
+<h2>06 — If Pro ends</h2>
+<p><strong>Nothing is deleted.</strong> Your entries, habits, finances, and health records stay on your device exactly as they were.</p>
+<p>Pro-only screens become locked. Everything else continues to work, and the app keeps recording as normal. If you subscribe again, those screens unlock with your full history intact.</p>
+<p>Your data is yours whether or not you are paying for anything. You can export it at any time.</p>
+</section>
+
+<section>
+<h2>07 — Price changes</h2>
+<p>Prices may change over time. If the price of a subscription you hold changes, the store notifies you before it takes effect and gives you the chance to cancel first. Existing lifetime purchases are never re-charged.</p>
+<p>Introductory or promotional prices apply only for the period stated at the time of purchase.</p>
+</section>
+
+<section>
+<h2>08 — Availability and your backups</h2>
+<p>Lifosys is provided as it is. We work to keep it correct and reliable, and we fix faults as we find them, but we cannot guarantee that the app will be free of errors or available without interruption.</p>
+<p>Because your data lives on your device, <strong>we hold no copy of it and cannot recover it for you</strong> if your device is lost, damaged, or reset. Use the backup and export features in the app, and keep a copy somewhere safe.</p>
+<p>To the extent permitted by law, we are not liable for indirect or consequential loss arising from use of the app. Nothing in these terms limits rights you have under consumer law that cannot be limited.</p>
+</section>
+
+<section>
+<h2>09 — Acceptable use</h2>
+<p>Do not attempt to reverse-engineer, resell, or redistribute the app, and do not attempt to circumvent payment for paid features. The app and its contents remain our intellectual property; your entries remain entirely yours.</p>
+</section>
+
+<section>
+<h2>10 — Your data</h2>
+<p>How the app handles your information is set out in full in the <a href="https://lifosys-app.github.io/privacy/">Privacy Policy</a>. In short: there is no Lifosys server, no account, and no automatic upload of anything you write.</p>
+</section>
+
+<section>
+<h2>11 — Changes to these terms</h2>
+<p>These terms may be updated. When they are, this page changes and the date at the top is revised. Material changes are also noted in the app’s release notes. Continuing to use the app after a change means you accept it.</p>
+</section>
+
+<section>
+<h2>12 — Governing law</h2>
+<p>These terms are governed by the laws of India. Nothing here removes protections available to you under the consumer law of the country you live in.</p>
+</section>
+
+<section>
+<h2>13 — Contact</h2>
+<p>Questions about these terms, about a purchase, or about a refund:</p>
+<div class="email">lifosys.labs@gmail.com</div>
+</section>
+
+<footer>
+  <p class="tag">An operating system for your life, running entirely on your device.</p>
+  <p class="copy">© 2026 Lifosys · Sudhir Ranjan · <a href="https://lifosys-app.github.io/privacy/">Privacy policy</a> · <a href="https://lifosys-app.github.io/privacy/delete.html">Data deletion</a></p>
+</footer>
+
+</div>
+</body>
+</html>
